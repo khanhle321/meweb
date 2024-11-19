@@ -53,7 +53,7 @@
 </head>
 <body>
     <header>
-        <h1>My Image Gallery</h1>
+        <h1>Kho hình A3</h1>
     </header>
     <div class="upload-section">
         <label for="fileInput">Upload Image</label>
