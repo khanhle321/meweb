@@ -62,20 +62,6 @@
     <div class="gallery" id="imageGallery">
         <!-- Uploaded images will be displayed here -->
     </div>
-
-    <script>
-        const fileInput = document.getElementById('fileInput');
-        const imageGallery = document.getElementById('imageGallery');
-
-        fileInput.addEventListener('change', (event) => {
-            const files = event.target.files;
-            for (let i = 0; i < files.length; i++) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    const img = document.createElement('img');
-                    img.src = e.target.result;
-                    imageGallery.appendChild(img);
-                };
                 reader.readAsDataURL(files[i]);
             }
         });
